@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css?family=Krona+One|Roboto+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Krona One';
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: url(../img/naslovna-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left top;
+}
+
+/* Logo, img, description */
+.top {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 2vh;
+    left: 1vw;
+}
+
+.logo {
+    height: 100px;
+    width: 100px;
+}
+
+.doc {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 15px;
+    left: -65px;
+}
+
+h1 {
+    font-family: 'Krona One';
+    font-size: 20px;
+    color: white;
+    letter-spacing: 10px;
+}
+
+h3 {
+    font-family: 'Krona One';
+    font-size: 12px;
+    color: white;
+    position: relative;
+    top: -70px;
+    left: 40px;
+}
+
+/* Nav bar */
+nav {
+    box-sizing: border-box;
+    height: 80px;
+    width: 100%;
+    z-index: 100;
+}
+
+label .logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+    position: relative;
+    top: -7vh;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    line-height: 80px;
+    margin: 0 5px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active, a:hover {
+    background: #09767c;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 952px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+        position: relative;
+        top: -35px;
+        right: 60px;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 130vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 100;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    a:hover, a:active {
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
+
+/* Intro */
+.page-title {
+    font-size: 28px;
+}
+
+.description {
+    padding-top: 50px;
+}
+
+.intro {
+    font-size: 16px;
+    padding: 5px;
+    text-align: center;
+}
+
+h1 {
+    padding: 20px;
+    position: relative;
+    text-align: center;
+}
+
+
+
+/* Team Cards */
+.team-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 300px;
+    left: 130px;
+
+}
+
+.team {
+    padding: 10px;
+    height: 500px;
+}
+
+.page-title-2 {
+    font-size: 28px;
+    position: relative;
+    display: inline-block;
+    top: 50px;
+    left: 45%;
+}
+
+.card-1,
+.card-2 {
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 400px;
+    transform-style: preserve-3d;
+    perspective: 600px;
+    transition: 0.5s;
+    position: relative;
+    padding-left: 20px;
+}
+
+.card-1 .front,
+.card-2 .front {
+    width: 90%;
+    height: 60%;
+    background: transparent;
+    backface-visibility: hidden;
+    transform: rotateX(0deg);
+    transition: 0.5s;
+    top: 100px;
+}
+
+.card-1:hover .front,
+.card-2:hover .front {
+    transform: rotateX(-180deg);
+}
+
+.card-1 .back,
+.card-2 .back {
+    position: relative;
+    top: -230px;
+    width: 90%;
+    height: 81%;
+    border-radius: 8px;
+    background: #09767c;
+    backface-visibility: hidden;
+    transform: rotateX(180deg);
+    transition: 0.5s;
+}
+
+.card-1:hover .back,
+.card-2:hover .back {
+    transform: rotateX(0deg);
+}
+
+h2 {
+    font-size: 14px;
+    padding: 10px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+p {
+    font-size: 8px;
+    padding: 10px;
+    text-align: center;
+    line-height: 1.6;
+    font-family: 'Roboto Mono';
+}
+
+span {
+    font-style: italic;
+    font-size: 10px;
+    font-family: 'Roboto Mono';
+}
+
+.card .back .details {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+img {
+    border-radius: 8px;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 700px) {
+    .team-cards {
+        display: flex;
+        flex-direction: column;
+    }
+}
+

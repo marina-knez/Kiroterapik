@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://kit.fontawesome.com/5f3c762005.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <link rel="stylesheet" href="online_narudžbe.css">
+
+    <title>Kiroterapik</title>
+</head>
+
+<body onload="renderDate()">
+    <div class="top">
+        <img src="../img/logo.png" alt="Logo" class="logo">
+        <div class="doc">
+            <h1 class="title">KIROTERAPIK</h1>
+            <h3 class="title-description">Centar za kralježnicu i mišićno-koštane bolesti</h3>
+        </div>
+    </div>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <li class="menu-item"><a href="../Naslovna/naslovna.html">Naslovna</a></li>
+            <li class="menu-item"><a href="../O nama/o_nama.html">O nama</a></li>
+            <li class="menu-item"><a href="../Usluge/usluge.html">Usluge</a></li>
+            <li class="menu-item"><a href="../Edukacija/edukacija.html">Edukacija</a></li>
+            <li class="menu-item"><a href="../Kontakt/kontakt.html">Kontakt</a></li>
+            <li class="menu-item"><a class="active" href="../Online narudžbe/online_narudžbe.html">Online narudžbe</a></li>
+            <li class="menu-item"><a href="../Poklon bon/poklon_bon.html">Poklon bon</a></li>
+        </ul>
+    </nav>
+
+    <h1 class="page-title">ONLINE NARUDŽBE</h1>
+    <div class="tabs">
+        <a href="tab1.html" id="active">Masaže</a>
+        <a href="tab2.html">Kiropraktika</a>
+        <a href="tab3.html">Medicinska gimnastika</a>
+        <a href="tab4.html">Elektroterapijski tretmani</a>
+        <a href="tab5.html">Termoterapijski tretmani</a>
+        <a href="tab6.html">Terapija udarnim valom</a>
+        <a href="tab7.html">Tretmani lica, vrata i dekoltea</a>
+        <a href="tab8.html">Manikura</a>
+        <a href="tab9.html">Pedikura</a>
+        <a href="tab10.html">Depilacija</a>
+    </div>
+    
+    <div class="stuff">
+        <div class="back">
+            <a href="../Online narudžbe/online_narudžbe.html" class="link">
+                <i id="ikonica" class="fas fa-arrow-left"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="all-cards">
+        <section class="card-x-all">
+            <div class="card-x-1">
+                <div class="face1">
+                    <div class="content">
+                        <h2>Medicinska masaža</h2>
+                        <h6 class="duration">45 min</h6>
+                        <a href="#" class="more">Više...</a>
+                        <button id="btn" class="reserve">Rezerviraj</button>
+                    </div>
+                </div>
+                <div class="face2">
+                    <div class="content">
+                        <p class="description">Medicinska masaža je metoda fizikalne terapije koja se služi nizom sustavnih pokreta na površini tijela radi manipulacije tjelesnim tkivima.
+                        Djeluje se na velike mišićne grupe s ciljem reaktivacije krvotoka i postizanja reorganizacije mišićnog tonusa.</p>
+                    </div>
+                </div>                
+            </div>
+
+            <div class="card-x-1">
+                <div class="face1">
+                    <div class="content">
+                        <h2>Parcijalna medicinska masaža</h2>
+                        <h6 class="duration">30 min</h6>
+                        <a href="#" class="more">Više...</a>
+                        <button id="btn" class="reserve">Rezerviraj</button>
+                    </div>
+                </div>
+                <div class="face2">
+                    <div class="content">
+                        <p class="description">Intenzivna masaža na problematičnim mjestima, donosi trenutno olakšanje kod akutnih bolova i popuštanje napetosti. Najčešće obuhvaća tretman samo leđa od lumbalnog do okcipitalnog područja, ili ciljanu masažu vrata i ramenog obruća</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-x-1">
+                    <div class="face1">
+                        <div class="content">
+                            <h2>Sportska masaža</h2>
+                            <h6 class="duration">30 min</h6>
+                            <a href="#" class="more">Više...</a>
+                            <button id="btn" class="reserve">Rezerviraj</button>
+                        </div>
+                    </div>
+                <div class="face2">
+                    <div class="content">
+                        <p class="description">Bavljenje sportom svih dobnih grupa stanovništva nameće potrebu brzog i učinkovitog oporavka. Fizikalna medicina i fizikalna terapija nalaze široku primjenu ne samo u liječenju i rehabilitaciji, već i u prevenciji sportskih ozljeda i oštećenja.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="card-x-all">
+            <div class="card-x-1">
+                <div class="face1">
+                    <div class="content">
+                        <h2>Akupresurna masaža</h2>
+                        <h6 class="duration">30min</h6>
+                        <a href="#" class="more">Više...</a>
+                        <button class="reserve">Rezerviraj</button>
+                    </div>
+                </div>
+                <div class="face2">
+                    <div class="content">
+                        <p class="description">Akupresurna masaža je tradicionalna kineska medicina izvedena iz akupunkture. U akupresuri se fizički pritisak primjenjuje na akupunkturne točke na tijelu. Zbog snažnog refleksnog djelovanja ova masaža djeluje i na mišiće i unutarnje organe.</p>
+                    </div>
+                </div>                
+            </div>
+
+            <div class="card-x-1">
+                <div class="face1">
+                    <div class="content">
+                        <h2>Vacuum masaža</h2>
+                        <h6 class="duration">30 min</h6>
+                        <a href="#" class="more">Više...</a>
+                        <button class="reserve">Rezerviraj</button>
+                    </div>
+                </div>
+                <div class="face2">
+                    <div class="content">
+                        <p class="description">Vakum masaža je vrlo moćna tehnika masaže koja djeluje lokalno na problematičnim područjima, poboljšava cirkulaciju te pospješuje zdravstveno stanje i vitalnost cijelog organizma. U cijelom procesu ove tehnike masaže koristi se moć vakuuma koja vraća cirkulaciju u zone obuhvaćene boli i tako omogućuje dovoljne količine nutrijenata za njihovo liječenje.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-x-1">
+                    <div class="face1">
+                        <div class="content">
+                            <h2>Relaksirajuća masaža</h2>
+                            <h6 class="duration">30 min</h6>
+                            <a href="#" class="more">Više...</a>
+                            <button class="reserve">Rezerviraj</button>
+                        </div>
+                    </div>
+                <div class="face2">
+                    <div class="content">
+                        <p class="description">Terapijska masažna tehnika,primjenjuje se pri njegovanju tijela i za poboljšanje općeg zdravlja. Potiče eliminaciju toksina, popuštanje napetosti bolnih mišića i duboko opušta. Jača imunološki sustav i pomaže u održavanju dobre fizičke i psihičke kondicije</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="card-x-all">
+            <div class="card-x-1">
+                <div class="face1">
+                    <div class="content">
+                        <h2>Hot stone masaža</h2>
+                        <h6 class="duration">30min</h6>
+                        <a href="#" class="more">Više...</a>
+                        <button class="reserve">Rezerviraj</button>
+                    </div>
+                </div>
+                <div class="face2">
+                    <div class="content">
+                        <p class="description">Za masažu toplim kamenjem koristi se bazaltno kamenje vulkanskog porijekla. Kamenje je ugrijano i tijekom tretmana lagano ispušta toplinu što tijelo čini opuštenim. Pomaže u otklanjanju reumatskih stanja, bolova u leđima, te poboljšava sirkulaciju. Ova masaža ima drenažni učinak, a rezultat je otklanjanje štetnih tvari iz organizma.</p>
+                    </div>
+                </div>                
+            </div>
+
+            <div class="card-x-1">
+                <div class="face1">
+                    <div class="content">
+                        <h2>Anticelulitna masaža</h2>
+                        <h6 class="duration">45 min</h6>
+                        <a href="#" class="more">Više...</a>
+                        <button class="reserve">Rezerviraj</button>
+                    </div>
+                </div>
+                <div class="face2">
+                    <div class="content">
+                        <p class="description">Odabranim progresivnim masažnim hvatovima hemolimatične i klasične masaže uz primjenu anticelulitnih krema, ulja i pakunga, djelujemo na ciljana područja.
+                        Najčešće ju kombiniramo uz medicinsku gimnastiku i fango.
+                            </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card-x-1">
+                    <div class="face1">
+                        <div class="content">
+                            <h2>Masaža lica, vrata i dekoltea</h2>
+                            <h6 class="duration">15 min</h6>
+                            <a href="#" class="more">Više...</a>
+                            <button class="reserve">Rezerviraj</button>
+                        </div>
+                    </div>
+                <div class="face2">
+                    <div class="content">
+                        <p class="description">Izuzetna opuštajuća masaža za otklanjanje stresa i napetosti u predjelu glave, vrata i ramena. Stimulira akupunkturne točke, potiče limfnu drenažu otvaranjem pora disanjem kože. Djelotvorna je i u prevenciji nastanka bora.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="card-x-all">
+            <div class="card-x-1">
+                <div class="face1">
+                    <div class="content">
+                        <h2>Aromaterapija</h2>
+                        <h6 class="duration">30 min</h6>
+                        <a href="#" class="more">Više...</a>
+                        <button class="reserve">Rezerviraj</button>
+                    </div>
+                </div>
+                <div class="face2">
+                    <div class="content">
+                        <p class="description">Cilj joj je opuštanje, ljepota i osjećaj zadovoljstva samim sobom. Sama tehnika masaže treba biti u skladu s djelovanjem izvornog eteričnog ulja. Umijeće aromaterapeuta i dobre masaže leži u dobrom izboru eteričnih ulja.</p>
+                    </div>
+                </div>                
+            </div>
+
+            <div class="card-x-1">
+                <div class="face1">
+                    <div class="content">
+                        <h2>Limfna drenaža</h2>
+                        <h6 class="duration">1 h</h6>
+                        <a href="#" class="more">Više...</a>
+                        <button class="reserve">Rezerviraj</button>
+                    </div>
+                </div>
+                <div class="face2">
+                    <div class="content">
+                        <p class="description">LIMFNA DRENAŽA (ručna i aparaturna)
+                            Limfna drenaža je tehnika masaže, koja korisreći limfni sistem, ima za cilj izbacivanje vode i toksina iz tijela. Potpuno je bezbolna i ne ostavlja modrice. Koristi se za rješavanje limfoedema (otoka), ali i kod zdravih ljudi ima široku primjenu.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+</div>
+
+
+<div class="stuff">
+    <div class="wrapper">
+        <div class="calendar">
+            <div class="month">
+                <div class="prev" onclick="moveDate('prev')">
+                    <span>&#10094;</span>
+                </div>
+                <div>
+                    <h2 id="month"></h2>
+                    <p id="date_str"></p>
+                </div>
+                <div class="next" onclick="moveDate('next')">
+                    <span>&#10095;</span>
+                </div>
+            </div>
+            <div class="weekdays">
+                <div>Sun</div>
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+            </div>
+            <div class="days">
+
+            </div>
+        </div>
+    </div>
+
+    <div class="timeTable">
+        <table class="table" cellspacing="15px">
+            <tr class="head">
+                <th>Morning</th>
+                <th>Afternoon</th>
+                <th>Evening</th>
+            </tr>
+
+            <tbody class="tableBody">
+            <tr>
+                <td>9:00 am</td>
+                <td>12:00 pm</td>
+                <td>5:00 pm</td>
+            </tr>
+                
+            <tr>
+                <td>9:30 am</td>
+                <td>12:30 pm</td>
+                <td>5:30 pm</td>
+            </tr>
+
+            <tr>
+                <td>10:00 am</td>
+                <td>1:00 pm</td>
+                <td>6:00 pm</td>
+            </tr>
+
+            <tr>
+                <td>10:30 am</td>
+                <td>1:30 pm</td>
+                <td>6:30 pm</td>
+            </tr>
+
+            <tr>
+                <td>11:00 am</td>
+                <td>2:00 pm</td>
+                <td>7:00 pm</td>
+            </tr>
+
+            <tr>
+                <td>11:30 am</td>
+                <td>2:30 pm</td>
+                <td>7:30 pm</td>
+            </tr>
+
+            <tr>
+                <td class="none"></td>
+                <td>3:0 pm</td>
+                <td>8:00 pm</td>
+            </tr>
+
+            <tr>
+                <td class="none"></td>
+                <td>3:30 pm</td>
+                <td class="none"></td>
+            </tr>
+
+            <tr>
+                <td class="none"></td>
+                <td>4:0 pm</td>
+                <td class="none"></td>
+            </tr>
+
+            <tr>
+                <td class="none"></td>
+                <td>4:30 pm</td>
+                <td class="none"></td>
+            </tr>
+        </tbody>
+
+        </table>
+    </div>
+</div>  
+
+    <div class="stuff-2">
+        <div class="data">
+            <h4 class="usluga"></h4>
+            <h6 class="trajanje"></h6>
+            <h5 class="vrijeme"></h5>
+            <h5 class="datum"></h5>
+           <!-- <h5>Adresa</h5> -->
+            <a href="#" class="form-next">Next</a>
+        </div>
+        <form class ="conf-form">
+            <input type="text" class="ime" placeholder="Ime*">
+            <input type="text" class="prezime" placeholder="Prezime*">
+            <input type="text" class="email" placeholder="Email">
+            <input type="text" class="broj" placeholder="Kontakt broj*">
+            <p class="form">Polja označena * su obavezna.</p>
+            <button class="potvrdi">Potvrdi</button>
+        </form>
+    </div>
+
+<script src="online_narudžbe.js"></script>
+</body>
+</html>

@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css?family=Krona+One|Roboto+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Krona One';
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    background: url(../img/back.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left top;
+}
+
+/* Logo, img, description */
+.top {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 2vh;
+    left: 1vw;
+}
+
+.logo {
+    height: 100px;
+    width: 100px;
+}
+
+.doc {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 40px;
+    left: -30px;
+}
+
+.title {
+    font-family: 'Krona One';
+    font-size: 20px;
+    color: white;
+    letter-spacing: 10px;
+    position: relative;
+}
+
+.description {
+    font-family: 'Krona One';
+    font-size: 12px;
+    color: white;
+    position: relative;
+}
+
+/* Nav bar */
+nav {
+    box-sizing: border-box;
+    height: 80px;
+    width: 100%;
+    z-index: 100;
+}
+
+label .logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+    position: relative;
+    top: -2vh;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    line-height: 80px;
+    margin: 0 5px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active, a:hover {
+    background: #09767c;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 952px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+        position: relative;
+        top: -35px;
+        right: 60px;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 130vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 100;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    a:hover, a:active {
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
+
+/* Cards */
+img {
+    border-radius: 8px;
+}
+
+h1 {
+    font-size: 18px;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+}
+
+p {
+    font-family: 'Roboto Mono';
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.card-details {
+    background: url(../img/back.JPG);
+    padding: 3em 0;
+    display: flex;
+    flex-direction: row;
+    padding: 40px 100px;
+  }
+  
+  .from-left {
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  #one {
+      padding-bottom: 40px;
+  }
+
+  .from-right {
+    -webkit-transform: translateX(50%);
+    transform: translateX(50%);
+  }
+
+  .content {
+      padding: 50px;
+  }
+  
+  .from-left,
+  .from-right {
+    transition: opacity 250ms ease-in, -webkit-transform 400ms ease-in;
+    transition: opacity 250ms ease-in, transform 400ms ease-in;
+    transition: opacity 250ms ease-in, transform 400ms ease-in,
+      -webkit-transform 400ms ease-in;
+    opacity: 0;
+  }
+  
+  .from-left.appear,
+  .from-right.appear {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  /* Media Queries */
+@media (max-width: 1226px) {
+    .card-details {
+        padding: 10px 25px;
+    }
+    .content {
+        padding: 10px 20px;
+    }
+}
+
+ @media (max-width: 948px) {
+   h1 {
+       font-size: 14px;
+   }
+   p {
+       font-size: 12px;
+   }
+}
+
+@media (max-width: 816px) {
+    p {
+        font-size: 11px;
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 726px) {
+    .card-details {
+        padding: 10px 10px;
+    }
+    #one {
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-width: 648px) {
+    .card-details {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: -600px;
+        justify-content: center;
+        align-items: center;
+    }
+}

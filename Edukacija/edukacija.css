@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css?family=Krona+One|Roboto+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Krona One';
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: url(../img/back.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left top;
+    color: white;
+}
+
+/* Logo, img, description */
+.top {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: -1vh;
+    left: -1vw;
+}
+
+.logo {
+    height: 150px;
+    width: 150px;
+}
+
+.doc {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 37px;
+    left: -52px;
+}
+
+.title {
+    font-family: 'Krona One';
+    font-size: 20px;
+    color: white;
+    letter-spacing: 10px;
+    position: relative;
+    left: -41px;
+}
+
+.description {
+    font-family: 'Krona One';
+    font-size: 12px;
+    color: white;
+    position: relative;
+}
+
+/* Nav bar */
+nav {
+    box-sizing: border-box;
+    height: 80px;
+    width: 100%;
+    z-index: 100;
+}
+
+label .logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+    position: relative;
+    top: -10vh;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    line-height: 80px;
+    margin: 0 5px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active, a:hover {
+    background: #09767c;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 952px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+        position: relative;
+        top: -35px;
+        right: 60px;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 130vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 100;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    a:hover, a:active {
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
+
+
+h2, p {
+    font-size: 10px;
+    line-height: 1.6;
+}
+
+h1 {
+    font-family: 'Roboto Mono';
+    font-size: 36px;
+    text-align: center;
+    position: relative;
+    top: 24px;
+    padding-bottom: 24px;
+    letter-spacing: 6px;
+}
+
+.intro, .document {
+    font-family: 'Krona One';
+    font-size: 12px;
+    text-align: center;
+    padding-top: 12px;
+}
+
+.intro {
+    list-style: none;
+    font-size: 18px;
+}
+
+.card {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 20px;
+   text-align: center;
+}
+
+img {
+    padding: 20px;
+}
+
+h2 {
+    font-size: 16px;
+    padding: 20px;
+}
+
+p {
+    font-size: 14px;
+}
+
+.separate, .sep-2 {
+    padding: 15px;
+}
+
+.sep-2 {
+    font-size: 12px;
+}
+
+.download {
+    padding: 20px;
+}
+
+button {
+    display: inline-block;
+    flex-direction: row;
+    font-family: 'Krona One';
+    font-weight: bold;
+    font-size: 18px;
+    border: 3px solid #fff;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 8px;
+    color: #09767c;
+    position: relative;
+    width: 300px;
+    height: 80px;
+    left: 40vw;
+}
+
+button:hover {
+    background: #fff;
+    color: #09767c;
+    font-weight: bold;
+    border: 5px solid #09767c;
+    cursor: pointer;
+}
+
+.animate, .intro {
+    position: relative;
+    animation-name: image;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+a.pristupnica {
+    color: transparent;
+    background-color: transparent;
+}
+
+@keyframes image {
+    0% {
+        right: -3000px;
+    }
+    100% {
+        right: 0;
+    }
+}
+
+.move {
+    font-size: 24px;
+    position: relative;
+}
+
+.move,
+#move {
+    animation: title;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes title {
+    0% {
+        top: -1000px;
+    }
+    100% {
+        top: 5px;
+    }
+}
+
+.separate, .sep-2, #intro-2 {
+    position: relative;
+    animation-name: content;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes content {
+    0% {
+        left: -3000px;
+    }
+    100% {
+        left: 0;
+    }
+}

@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css?family=Krona+One|Roboto+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Krona One';
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: url(../img/naslovna-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left top;
+}
+
+/* Logo, img, description */
+.top {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 2vh;
+    left: 1vw;
+}
+
+.logo {
+    height: 100px;
+    width: 100px;
+}
+
+.doc {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 35px;
+    left: -30px;
+}
+
+h1 {
+    font-family: 'Krona One';
+    font-size: 20px;
+    color: white;
+    letter-spacing: 10px;
+}
+
+h3 {
+    font-family: 'Krona One';
+    font-size: 12px;
+    color: white;
+    position: relative;
+}
+
+/* Nav bar */
+nav {
+    box-sizing: border-box;
+    height: 80px;
+    width: 100%;
+    z-index: 100;
+}
+
+label .logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+    position: relative;
+    top: -2vh;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    line-height: 80px;
+    margin: 0 5px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active, a:hover {
+    background: #09767c;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 952px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+        position: relative;
+        top: -35px;
+        right: 60px;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 130vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 100;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    a:hover, a:active {
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
+
+.gift {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    left: 10%;
+    top: 5vh;
+}
+
+img {
+    border-radius: 16px;
+    width: 550px;
+}
+
+.pokloni {
+    display: inline-block;
+    font-family: 'Krona One';
+    font-size: 20px;
+    border: 5px solid #09767c;
+    padding: 8px;
+    text-decoration: none;
+    border-radius: 8px;
+    color: #09767c;
+    position: relative;
+    left: 160px;
+    top: 20px;
+    font-size: 18px;
+    letter-spacing: 8px;
+    cursor: pointer;
+    width: 200px;
+    text-align: center;
+    background: white;
+}
+
+.pokloni:hover {
+    background: #09767c;
+    color: #fff;
+    font-weight: bold;
+    border: 5px solid #fff;
+}
